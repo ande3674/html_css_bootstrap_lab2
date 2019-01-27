@@ -1,0 +1,13 @@
+#real-alert {
+  color: red;
+  font-size: 20px;
+  display: block;
+  border-style: groove;
+}
+
+#test-only {
+  color: blue;
+  font-size: 20px;
+  display: block;
+  border-style: inset;
+}

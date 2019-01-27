@@ -1,0 +1,9 @@
+body {
+  font-family: 'Rubik', sans-serif;
+  font-family: 'Ubuntu Condensed', sans-serif;
+  background-color: #f7d9d9;
+}
+
+.jumbotron {
+  background-color: firebrick;
+}
