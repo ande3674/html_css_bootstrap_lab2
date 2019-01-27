@@ -1,0 +1,16 @@
+body {
+    font-family: 'Archivo Narrow', sans-serif;
+}
+
+.jumbotron {
+    background-color: crimson;
+  }
+
+  .screenshots {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 50%;
+  }

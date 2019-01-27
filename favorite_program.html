@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Road Trip Guide</title>
+
+  <!-- Good practice to add this so browser knows -->
+  <meta charset="utf-8">
+  <!-- To have bootstrap keep things on page as best it can -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link href="https://fonts.googleapis.com/css?family=Archivo+Narrow" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body class="m-3">
+
+  <div class="jumbotron">
+    <h1>Road Trip Guide</h1>
+  </div>
+
+  <div class="row">
+
+    <div class="col-md-6">
+        <div class="ml-3">
+            <p>
+                My program will be your best friend on your road trip. 
+                Enter your origin, your destination, and what type of
+                recommendation you would like for your destination location,
+                and the program will give you all of the information you need
+                for your rest stops along the way. You will get the name of the city
+                where you will stop, a suggestion on what to eat at that stop, 
+                and a recommendation for what to do once you arrive at your destination.
+                
+            </p>
+        </div>
+    </div>
+
+    <div class="col-md-6">
+        <div class="mr-3">
+
+            <p>One of the challenges was to figure out how to associate a city
+                name to a set of coordinates. This is done by reverse geocoding
+                the location based on the longitude and latitude. Luckily, Google 
+                will do this for you through one of their APIs. Here is the code I 
+                wrote to do this:
+            </p>
+
+            <pre><code>
+                def reverse_geocode_place(lat, lon):
+                    l = str(lat) + "," + str(lon)
+                    u = 'https://maps.googleapis.com/maps/api/geocode/json?latlng={LL}&key=AIzaSyCUzzNpRfSkRPbdOHtrjnlfCaCZ26cNKnc'.format(LL=l)
+                    response = requests.get(u).json()
+                    return response
+            </code></pre>
+            
+        </div>
+  </div>
+
+  <div class="row">
+
+        <div class="col-md-6">
+            <div class="ml-3 mr-3 screenshots">
+                <img src="program1.png" width="600" height="355">
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <div class="ml-3 mr-3 screenshots">
+                <img src="program2.png" width="600" height="355">
+            </div>
+        </div>
+    
+    </div>
+
+
+</head>
+</body>
+
+
+
+
+
+
+
+
+
+<div class="form-check">
+</div>
