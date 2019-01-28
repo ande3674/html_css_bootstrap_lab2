@@ -4,13 +4,32 @@ body {
 
 .jumbotron {
     background-color: crimson;
+    text-align: center;
   }
 
-  .screenshots {
-      max-width: 100%;
-      height: auto;
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-      width: 50%;
+.screenshots {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
   }
+
+.container {
+    position: relative;
+}
+
+.home-screen {
+    position: absolute;
+    bottom: 8px;
+    right: 4px;
+    font-size: 20px;
+  }
+
+.results-screen {
+    position: absolute;
+    bottom: 8px;
+    right: 4px;
+    font-size: 20px;
+}
