@@ -2,9 +2,22 @@ body {
     font-family: 'Archivo Narrow', sans-serif;
 }
 
+#bigger{
+    font-size: 80px;
+}
+
 .jumbotron {
     background-color: crimson;
     text-align: center;
+  }
+
+  .section1 {
+      border: solid 2px crimson;
+      border-radius: 10px;
+      margin-left: 10px;
+      margin-right: 10px;
+      padding-top: 10px;
+      padding-bottom: 10px;
   }
 
 .screenshots {
