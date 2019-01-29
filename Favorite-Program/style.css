@@ -16,8 +16,8 @@ body {
     width: 50%;
   }
 
-.container {
-    position: relative;
+.caption {
+    color: crimson;
 }
 
 .home-screen {
