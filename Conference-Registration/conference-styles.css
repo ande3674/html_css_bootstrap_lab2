@@ -1,0 +1,17 @@
+
+
+body {
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Krub', sans-serif;
+    background: red;
+    background-image: linear-gradient(#00FA9A, #FFFF00);
+
+}
+
+.jumbotron {
+    
+    background-image: url("yellow-balls.jpg");
+    text-align: center;
+}
+
+
