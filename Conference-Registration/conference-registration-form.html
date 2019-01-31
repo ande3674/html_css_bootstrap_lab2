@@ -30,7 +30,7 @@
     <form class="mr-3">
 	<div>
 	    <label for="name">Name of Participant:</label>
-	    <input id="name" class="form-control" name="name" type="text">
+	    <input id="name" class="form-control" name="name" type="text" maxlength="70">
 	    <br>
 	    <label for="password">Password:</label>
 	    <input id="password" class="form-control" name="password" type="password">
@@ -38,7 +38,29 @@
 	    <label for="email">Email:</label>
 	    <input id="email" class="form-control" name="email" type="email">
 	    <br>
+	    <label for="t-shirt">T-Shirt Size:</label>
+	    <select name="t-shirt">
+	        <option value="small">Small</option>
+	        <option value="medium">Medium</option>
+	        <option value="large">Large</option>
+	    </select>
+	    <br>
+	    <br>
+	    <label for="dob">Birthday:</label>
+	    <input id="dob" class="form-control" name="dob" type="date">
+	    <br>
+	    <label for="session">Which Sessions Will You Attend?</label>
+	    <input type="checkbox" name="session" value="am">AM
+	    <input type="checkbox" name="session" value="pm">PM
+	    <br>
+	    <label for="rcv-email">Receive Event Emails?</label>
+	    <input type="radio" name="rcv-email" value="yes" checked="checked">Yes
+	    <input type="radio" name="rcv-email" value="no">No
 
+		<br>
+	    <input class="btn btn-dark" type="submit">
+	    
+	    
 	</div>
 
 
